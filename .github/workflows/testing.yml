@@ -1,0 +1,15 @@
+name: 🔎 Testing
+
+on:
+    workflow_dispatch:
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fguisso/action-1@main
+        with:
+          same-input: "hello"
+      - uses: fguisso/action-2@main
+        with:
+          same-input: "world"
