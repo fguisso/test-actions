@@ -1,0 +1,14 @@
+name: learn-github-actions
+
+on: [push]
+
+jobs:
+  progressbar:
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+      - uses: actions/checkout@v3
+      - run: sleep 30
+      - run: echo Hello
+      - run: sleep 30
+      - run: echo World
